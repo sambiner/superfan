@@ -9,7 +9,7 @@
 		<div class="column full-width" id="column1">
 			<div class="upper-rectangle">
 				<div class="img center1">
-					<img class="constrain" id="img" src="images/dice-stationary.PNG"/>
+					<img class="constrain" id="img" src="images/dice-stationary.png"/>
 				</div>
 				<div class="place-spacer"></div>
 				<div class="number-display">
@@ -30,11 +30,11 @@
 				</div>
 			</div>
 			<div class="lower-rectangle">
-				<button class="lower-bar center1" onClick="optionsToggle(this)">
+				<button class="lower-bar center1 overflow" onClick="optionsToggle(this)">
 					<h3>Options</h3>
 				</button>
 				<div class="placeholder"></div>
-				<button class="lower-bar center1" onClick="reset(this)">
+				<button class="lower-bar center1 overflow" onClick="reset(this)">
 					<h3>Reset</h3>
 				</button>
 			</div>
@@ -53,9 +53,9 @@
 					</button>
 					<div class="place-spacer display" id="spacer1"></div>
 					<div class="place-spacer display" id="spacer2"></div>
-					<div class="d6 display" id="6-sided">
+					<div class="d6">
 						<div class="place-aligner"></div>
-						<button class="dice-sizes center1">
+						<button class="dice-sizes display center1" id="6-sided" onClick="opaqueSix(this)">
 							<p>6-sided</p>
 						</button>
 					</div>
@@ -63,7 +63,7 @@
 					<div class="place-spacer display" id="spacer4"></div>
 					<div class="d10 display" id="10-sided">
 						<div class="place-aligner"></div>
-						<button class="dice-sizes center1">
+						<button class="dice-sizes center1" onClick="opaqueTen(this)">
 							<p>10-sided</p>
 						</button>
 					</div>
@@ -77,43 +77,43 @@
 			</div>
 			<div class="lower-rectangle">
 				<div class="place-aligner2"></div>
-				<button class="troll1 center1 display" id="1">
+				<button class="troll1 center1 display overflow" id="1">
 					<p>1</p>
 				</button>
 				<div class="place-aligner2"></div>
-				<button class="troll1 center1 display" id="2">
+				<button class="troll1 center1 display overflow" id="2">
 					<p>2</p>
 				</button>
 				<div class="place-aligner2"></div>
-				<button class="troll1 center1 display" id="3">
+				<button class="troll1 center1 display overflow" id="3">
 					<p>3</p>
 				</button>
 				<div class="place-aligner2"></div>
-				<button class="troll1 center1 display" id="4">
+				<button class="troll1 center1 display overflow" id="4">
 					<p>4</p>
 				</button>
 				<div class="place-aligner2"></div>
-				<button class="troll1 center1 display" id="5">
+				<button class="troll1 center1 display overflow" id="5">
 					<p>5</p>
 				</button>
 				<div class="place-aligner2"></div>
-				<button class="troll1 center1 display" id="6">
+				<button class="troll1 center1 display overflow" id="6">
 					<p>6</p>
 				</button>
 				<div class="place-aligner2"></div>
-				<button class="troll1 center1 display" id="7">
+				<button class="troll1 center1 display overflow" id="7">
 					<p>7</p>
 				</button>
 				<div class="place-aligner2"></div>
-				<button class="troll1 center1 display" id="8">
+				<button class="troll1 center1 display overflow" id="8">
 					<p>8</p>
 				</button>
 				<div class="place-aligner2"></div>
-				<button class="troll1 center1 display" id="9">
+				<button class="troll1 center1 display overflow" id="9">
 					<p>9</p>
 				</button>
 				<div class="place-aligner2"></div>
-				<button class="troll1 center1 display" id="10">
+				<button class="troll1 center1 display overflow" id="10">
 					<p>10</p>
 				</div>
 			</div>
