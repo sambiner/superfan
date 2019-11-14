@@ -19,6 +19,20 @@ var sixsided = document.getElementById("6-sided");
 var tensided = document.getElementById("10-sided");
 var randomnumb = document.getElementById("random-numb");
 var img = document.getElementById("img");
+var placealigner = document.getElementById("placealigner");
+var troll = document.getElementById("troll");
+var place1 = document.getElementById("place1");
+var place2 = document.getElementById("place2");
+var place3 = document.getElementById("place3");
+var place4 = document.getElementById("place4");
+var place5 = document.getElementById("place5");
+var place6 = document.getElementById("place6");
+var place7 = document.getElementById("place7");
+var place8 = document.getElementById("place8");
+var place9 = document.getElementById("place9");
+var place10 = document.getElementById("place10");
+var rcolumn = document.getElementById("rcolumn");
+var column1 = document.getElementById("column1");
 const element1 = document.getElementById("6-sided");
 const element2 = document.getElementById("10-sided");
 const element3 = document.getElementById("1");
@@ -41,12 +55,10 @@ function myFunction(x){
 }
 myFunction(x);
 x.addListener(myFunction);
-
 function optionsToggle(elem){
-	document.getElementById("rcolumn").classList.toggle("display");
-	document.getElementById("column1").classList.toggle("full-width");
+	rcolumn.classList.toggle("display");
+	column1.classList.toggle("full-width");
 }
-
 function diceSizeToggle(elem){
 	sixsided.classList.toggle("display");
 	tensided.classList.toggle("display");
@@ -56,8 +68,7 @@ function diceSizeToggle(elem){
 	spacer4.classList.toggle("display");
 	spacer5.classList.toggle("display");
 	spacer6.classList.toggle("display");
-	document.getElementById("big-spacer1").classList.toggle("display");
-	document.getElementById("troll").classList.toggle("display");
+	troll.classList.toggle("display");
 	one.classList.add("display");
 	two.classList.add("display");
 	three.classList.add("display");
@@ -69,7 +80,6 @@ function diceSizeToggle(elem){
 	nine.classList.add("display");
 	ten.classList.add("display");
 }
-
 function trollMode(elem){
 	if(element1.classList.contains("opaque")){
 		one.classList.toggle("display");
@@ -93,7 +103,6 @@ function trollMode(elem){
 		
 	}
 }
-
 function diceRoll(elem){
 	document.getElementById("random-numb").innerHTML = "Rolling the dice...";
 	document.getElementById("img").src = "images/dice-rolling2.gif";
@@ -141,6 +150,10 @@ function diceRoll(elem){
 			img.src = "images/die-10.jpg";
 		} else {}
 		}, 1500);
+	} else if (element1.classList.contains("opaque") && element3.classList.contains("opaque")){
+		setTimeout(function (){
+		randomnumb.innerHTML = "You rolled a 1";
+		img.src = "images/die-1.jpg";}, 1500);
 	} else {
 		setTimeout(function (){
 		var roll = Math.floor(Math.random()*6) +1;
@@ -161,18 +174,197 @@ function diceRoll(elem){
 		}, 1500);
 	}
 }
-
 function reset(elem){
-	document.getElementById("random-numb").innerHTML = "Random Number";
-	document.getElementById("img").src = "images/dice-stationary.PNG";
+	randomnumb.innerHTML = "Random Number";
+	img.src = "images/dice-stationary.PNG";
 }
-
 function opaqueSix(elem){
-	document.getElementById("6-sided").classList.add("opaque");
-	document.getElementById("10-sided").classList.remove("opaque");
+	sixsided.classList.add("opaque");
+	tensided.classList.remove("opaque");
 }
-
 function opaqueTen(elem){
-	document.getElementById("10-sided").classList.add("opaque");
-	document.getElementById("6-sided").classList.remove("opaque");
+	tensided.classList.add("opaque");
+	sixsided.classList.remove("opaque");
+}
+function clickOne(elem){
+	if (element1.classList.contains("opaque")){
+		one.classList.add("opaque");
+		two.classList.remove("opaque");
+		three.classList.remove("opaque");
+		four.classList.remove("opaque");
+		five.classList.remove("opaque");
+		six.classList.remove("opaque");
+	} else if (element2.classList.contains("opaque")){
+		one.classList.add("opaque");
+		two.classList.remove("opaque");
+		three.classList.remove("opaque");
+		four.classList.remove("opaque");
+		five.classList.remove("opaque");
+		six.classList.remove("opaque");
+		seven.classList.remove("opaque");
+		eight.classList.remove("opaque");
+		nine.classList.remove("opaque");
+		ten.classList.remove("opaque");
+	} else {}
+}
+function clickTwo(elem){
+	if (element1.classList.contains("opaque")){
+		one.classList.remove("opaque");
+		two.classList.add("opaque");
+		three.classList.remove("opaque");
+		four.classList.remove("opaque");
+		five.classList.remove("opaque");
+		six.classList.remove("opaque");
+	} else if (element2.classList.contains("opaque")){
+		one.classList.remove("opaque");
+		two.classList.add("opaque");
+		three.classList.remove("opaque");
+		four.classList.remove("opaque");
+		five.classList.remove("opaque");
+		six.classList.remove("opaque");
+		seven.classList.remove("opaque");
+		eight.classList.remove("opaque");
+		nine.classList.remove("opaque");
+		ten.classList.remove("opaque");
+	} else {}
+}
+function clickThree(elem){
+	if (element1.classList.contains("opaque")){
+		one.classList.remove("opaque");
+		two.classList.remove("opaque");
+		three.classList.add("opaque");
+		four.classList.remove("opaque");
+		five.classList.remove("opaque");
+		six.classList.remove("opaque");
+	} else if (element2.classList.contains("opaque")){
+		one.classList.remove("opaque");
+		two.classList.remove("opaque");
+		three.classList.add("opaque");
+		four.classList.remove("opaque");
+		five.classList.remove("opaque");
+		six.classList.remove("opaque");
+		seven.classList.remove("opaque");
+		eight.classList.remove("opaque");
+		nine.classList.remove("opaque");
+		ten.classList.remove("opaque");
+	} else {}
+}
+function clickFour(elem){
+	if (element1.classList.contains("opaque")){
+		one.classList.remove("opaque");
+		two.classList.remove("opaque");
+		three.classList.remove("opaque");
+		four.classList.add("opaque");
+		five.classList.remove("opaque");
+		six.classList.remove("opaque");
+	} else if (element2.classList.contains("opaque")){
+		one.classList.remove("opaque");
+		two.classList.remove("opaque");
+		three.classList.remove("opaque");
+		four.classList.add("opaque");
+		five.classList.remove("opaque");
+		six.classList.remove("opaque");
+		seven.classList.remove("opaque");
+		eight.classList.remove("opaque");
+		nine.classList.remove("opaque");
+		ten.classList.remove("opaque");
+	} else {}
+}
+function clickFive(elem){
+	if (element1.classList.contains("opaque")){
+		one.classList.remove("opaque");
+		two.classList.remove("opaque");
+		three.classList.remove("opaque");
+		four.classList.remove("opaque");
+		five.classList.add("opaque");
+		six.classList.remove("opaque");
+	} else if (element2.classList.contains("opaque")){
+		one.classList.remove("opaque");
+		two.classList.remove("opaque");
+		three.classList.remove("opaque");
+		four.classList.remove("opaque");
+		five.classList.add("opaque");
+		six.classList.remove("opaque");
+		seven.classList.remove("opaque");
+		eight.classList.remove("opaque");
+		nine.classList.remove("opaque");
+		ten.classList.remove("opaque");
+	} else {}
+}
+function clickSix(elem){
+	if (element1.classList.contains("opaque")){
+		one.classList.remove("opaque");
+		two.classList.remove("opaque");
+		three.classList.remove("opaque");
+		four.classList.remove("opaque");
+		five.classList.remove("opaque");
+		six.classList.add("opaque");
+	} else if (element2.classList.contains("opaque")){
+		one.classList.remove("opaque");
+		two.classList.remove("opaque");
+		three.classList.remove("opaque");
+		four.classList.remove("opaque");
+		five.classList.remove("opaque");
+		six.classList.add("opaque");
+		seven.classList.remove("opaque");
+		eight.classList.remove("opaque");
+		nine.classList.remove("opaque");
+		ten.classList.remove("opaque");
+	} else {}
+}
+function clickSeven(elem){
+	if (element2.classList.contains("opaque")){
+		one.classList.remove("opaque");
+		two.classList.remove("opaque");
+		three.classList.remove("opaque");
+		four.classList.remove("opaque");
+		five.classList.remove("opaque");
+		six.classList.remove("opaque");
+		seven.classList.add("opaque");
+		eight.classList.remove("opaque");
+		nine.classList.remove("opaque");
+		ten.classList.remove("opaque");
+	} else {}
+}
+function clickEight(elem){
+	if (element2.classList.contains("opaque")){
+		one.classList.remove("opaque");
+		two.classList.remove("opaque");
+		three.classList.remove("opaque");
+		four.classList.remove("opaque");
+		five.classList.remove("opaque");
+		six.classList.remove("opaque");
+		seven.classList.remove("opaque");
+		eight.classList.add("opaque");
+		nine.classList.remove("opaque");
+		ten.classList.remove("opaque");
+	} else {}
+}
+function clickNine(elem){
+	if (element2.classList.contains("opaque")){
+		one.classList.remove("opaque");
+		two.classList.remove("opaque");
+		three.classList.remove("opaque");
+		four.classList.remove("opaque");
+		five.classList.remove("opaque");
+		six.classList.remove("opaque");
+		seven.classList.remove("opaque");
+		eight.classList.remove("opaque");
+		nine.classList.add("opaque");
+		ten.classList.remove("opaque");
+	} else {}
+}
+function clickTen(elem){
+	if (element2.classList.contains("opaque")){
+		one.classList.remove("opaque");
+		two.classList.remove("opaque");
+		three.classList.remove("opaque");
+		four.classList.remove("opaque");
+		five.classList.remove("opaque");
+		six.classList.remove("opaque");
+		seven.classList.remove("opaque");
+		eight.classList.remove("opaque");
+		nine.classList.remove("opaque");
+		ten.classList.add("opaque");
+	} else {}
 }

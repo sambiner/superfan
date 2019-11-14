@@ -18,7 +18,6 @@ h3{
 }
 p{
 	font-size: 1.25vw;
-	
 }
 .bigger-place-spacer{
 	width: 100%;
@@ -47,7 +46,7 @@ p{
 }
 .dice-options{
 	height: calc((2/13)*100%);
-	width: 60%;
+	width: 90%;
 	display: flex;
 }
 .dice-sizes{
@@ -55,14 +54,9 @@ p{
 	width: 30%;
 	display: flex;
 }
-.d6{
+.d{
 	height: calc((1.5/13)*100%);
-	width: 50%;
-	display: flex;
-}
-.d10{
-	height: calc((1.5/13)*100%);
-	width: 50%;
+	width: 55%;
 	display: flex;
 }
 .full-width{
@@ -126,8 +120,12 @@ p{
 }
 .troll-mode{
 	height: calc((2.1/13)*100%);
-	width: 50%;
+	width: 100%;
 	display: flex;
+}
+.troll{
+	height: 100%;
+	width: 90%;
 }
 .troll1{
 	height: 7vh;
@@ -152,6 +150,10 @@ p{
 .overflow{
 	overflow: hidden;
 }
+.bigger-place-aligner{
+	width: 65%;
+	height: 100%;
+}
 @media only screen and (max-width: 1000px){
 	body{
 		display: block;
@@ -162,6 +164,15 @@ p{
 	}
 	.full-width{
 		height: 100%;
+	}
+	.dice-options{
+		width: 100%;
+	}
+	p{
+		font-size: 1.5vh;
+	}
+	.troll{
+		width: 100%;
 	}
 }
 @media only screen and (max-width: 500px){

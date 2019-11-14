@@ -53,7 +53,8 @@
 					</button>
 					<div class="place-spacer display" id="spacer1"></div>
 					<div class="place-spacer display" id="spacer2"></div>
-					<div class="d6">
+					<div class="d">
+						<div class="bigger-place-aligner"></div>
 						<div class="place-aligner"></div>
 						<button class="dice-sizes display center1" id="6-sided" onClick="opaqueSix(this)">
 							<p>6-sided</p>
@@ -61,7 +62,8 @@
 					</div>
 					<div class="place-spacer display" id="spacer3"></div>
 					<div class="place-spacer display" id="spacer4"></div>
-					<div class="d10 display" id="10-sided">
+					<div class="d display" id="10-sided">
+						<div class="bigger-place-aligner"></div>
 						<div class="place-aligner"></div>
 						<button class="dice-sizes center1" onClick="opaqueTen(this)">
 							<p>10-sided</p>
@@ -69,51 +71,52 @@
 					</div>
 					<div class="place-spacer display" id="spacer5"></div>
 					<div class="place-spacer display" id="spacer6"></div>
-					<div class="bigger-place-spacer display" id="big-spacer1"></div>
-					<button class="troll-mode display center1" id="troll" onClick="trollMode(this)">
-						<h2>Troll Mode?</h2>
-					</button>
+					<div class="troll-mode display" id="troll">
+						<button class="troll center1" onClick="trollMode(this)">
+							<h2>Troll Mode?</h2>
+						</button>
+					</div>
 				</div>
 			</div>
 			<div class="lower-rectangle">
-				<div class="place-aligner2"></div>
-				<button class="troll1 center1 display overflow" id="1">
+				<div class="place-aligner1 display" id="placealigner"></div>
+				<button class="troll1 center1 display overflow" id="1" onClick="clickOne(this)">
 					<p>1</p>
 				</button>
 				<div class="place-aligner2"></div>
-				<button class="troll1 center1 display overflow" id="2">
+				<button class="troll1 center1 display overflow" id="2" onClick="clickTwo(this)">
 					<p>2</p>
 				</button>
 				<div class="place-aligner2"></div>
-				<button class="troll1 center1 display overflow" id="3">
+				<button class="troll1 center1 display overflow" id="3" onClick="clickThree(this)">
 					<p>3</p>
 				</button>
 				<div class="place-aligner2"></div>
-				<button class="troll1 center1 display overflow" id="4">
+				<button class="troll1 center1 display overflow" id="4" onClick="clickFour(this)">
 					<p>4</p>
 				</button>
 				<div class="place-aligner2"></div>
-				<button class="troll1 center1 display overflow" id="5">
+				<button class="troll1 center1 display overflow" id="5" onClick="clickFive(this)">
 					<p>5</p>
 				</button>
 				<div class="place-aligner2"></div>
-				<button class="troll1 center1 display overflow" id="6">
+				<button class="troll1 center1 display overflow" id="6" onClick="clickSix(this)">
 					<p>6</p>
 				</button>
 				<div class="place-aligner2"></div>
-				<button class="troll1 center1 display overflow" id="7">
+				<button class="troll1 center1 display overflow" id="7" onClick="clickSeven(this)">
 					<p>7</p>
 				</button>
 				<div class="place-aligner2"></div>
-				<button class="troll1 center1 display overflow" id="8">
+				<button class="troll1 center1 display overflow" id="8" onClick="clickEight(this)">
 					<p>8</p>
 				</button>
 				<div class="place-aligner2"></div>
-				<button class="troll1 center1 display overflow" id="9">
+				<button class="troll1 center1 display overflow" id="9" onClick="clickNine(this)">
 					<p>9</p>
 				</button>
 				<div class="place-aligner2"></div>
-				<button class="troll1 center1 display overflow" id="10">
+				<button class="troll1 center1 display overflow" id="10" onClick="clickTen(this)">
 					<p>10</p>
 				</div>
 			</div>
