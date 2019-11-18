@@ -126,6 +126,61 @@ function diceRoll(elem){
 			randomnumb.innerHTML = "You rolled a 4";
 			img.src = "images/die-4.PNG";
 		}, 1500);
+	} else if (element1.classList.contains("opaque") && element7.classList.contains("opaque")){
+		setTimeout(function(){
+			randomnumb.innerHTML = "You rolled a 5";
+			img.src = "images/die-5.PNG";
+		}, 1500);
+	} else if (element1.classList.contains("opaque") && element8.classList.contains("opaque")){
+		setTimeout(function(){
+			randomnumb.innerHTML = "You rolled a 6";
+			img.src = "images/die-6.png";
+		}, 1500);
+	} else if (element2.classList.contains("opaque") && element3.classList.contains("opaque")){
+		setTimeout(function(){
+			randomnumb.innerHTML = "You rolled a 1";
+			img.src = "images/die-1.jpg";
+		}, 1500);
+	} else if (element2.classList.contains("opaque") && element4.classList.contains("opaque")){
+		setTimeout(function(){
+			randomnumb.innerHTML = "You rolled a 2";
+			img.src = "images/die-2.jpg";
+		}, 1500);x
+	} else if (element2.classList.contains("opaque") && element5.classList.contains("opaque")){
+		setTimeout(function(){
+			randomnumb.innerHTML = "You rolled a 3";
+			img.src = "images/die-3.jpg";
+		}, 1500);
+	} else if (element2.classList.contains("opaque") && element6.classList.contains("opaque")){
+		setTimeout(function(){
+			randomnumb.innerHTML = "You rolled a 4";
+			img.src = "images/die-4.PNG";
+		}, 1500);
+	} else if (element2.classList.contains("opaque") && element7.classList.contains("opaque")){
+		setTimeout(function(){
+			randomnumb.innerHTML = "You rolled a 5";
+			img.src = "images/die-5.PNG";
+		}, 1500);
+	} else if (element2.classList.contains("opaque") && element8.classList.contains("opaque")){
+		setTimeout(function(){
+			randomnumb.innerHTML = "You rolled a 6";
+			img.src = "images/die-6.png";
+		}, 1500);
+	} else if (element2.classList.contains("opaque") && element9.classList.contains("opaque")){
+		setTimeout(function(){
+			randomnumb.innerHTML = "You rolled a 7";
+			img.src = "images/die-7.jpg";
+		}, 1500);
+	} else if (element2.classList.contains("opaque") && element10.classList.contains("opaque")){
+		setTimeout(function(){
+			randomnumb.innerHTML = "You rolled a 8";
+			img.src = "images/die-8.jpg";
+		}, 1500);
+	} else if (element2.classList.contains("opaque") && element11.classList.contains("opaque")){
+		setTimeout(function(){
+			randomnumb.innerHTML = "You rolled a 9";
+			img.src = "images/die-9.jpg";
+		}, 1500);
 	} else if(element1.classList.contains("opaque")){
 		setTimeout(function (){
 			var roll = Math.floor(Math.random()*6) +1;
