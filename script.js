@@ -106,71 +106,87 @@ function trollMode(elem){
 function diceRoll(elem){
 	document.getElementById("random-numb").innerHTML = "Rolling the dice...";
 	document.getElementById("img").src = "images/dice-rolling2.gif";
-	if(element1.classList.contains("opaque")){
+	if (element1.classList.contains("opaque") && element3.classList.contains("opaque")){
 		setTimeout(function (){
-		var roll = Math.floor(Math.random()*6) +1;
-		document.getElementById("random-numb").innerHTML = "You rolled a " + roll;
-		if (randomnumb.innerHTML == "You rolled a 1"){
+			randomnumb.innerHTML = "You rolled a 1";
 			img.src = "images/die-1.jpg";
-		} else if (randomnumb.innerHTML == "You rolled a 2"){
+		}, 1500);
+	} else if (element1.classList.contains("opaque") && element4.classList.contains("opaque")){
+		setTimeout(function(){
+			randomnumb.innerHTML = "You rolled a 2";
 			img.src = "images/die-2.jpg";
-		} else if (randomnumb.innerHTML == "You rolled a 3"){
+		}, 1500);
+	} else if (element1.classList.contains("opaque") && element5.classList.contains("opaque")){
+		setTimeout(function(){
+			randomnumb.innerHTML = "You rolled a 3";
 			img.src = "images/die-3.jpg";
-		} else if (randomnumb.innerHTML == "You rolled a 4"){
+		}, 1500);
+	} else if (element1.classList.contains("opaque") && element6.classList.contains("opaque")){
+		setTimeout(function(){
+			randomnumb.innerHTML = "You rolled a 4";
 			img.src = "images/die-4.PNG";
-		} else if (randomnumb.innerHTML == "You rolled a 5"){
-			img.src = "images/die-5.PNG";
-		} else if (randomnumb.innerHTML == "You rolled a 6"){
-			img.src = "images/die-6.png";
-		} else {}
+		}, 1500);
+	} else if(element1.classList.contains("opaque")){
+		setTimeout(function (){
+			var roll = Math.floor(Math.random()*6) +1;
+			document.getElementById("random-numb").innerHTML = "You rolled a " + roll;
+			if (randomnumb.innerHTML == "You rolled a 1"){
+				img.src = "images/die-1.jpg";
+			} else if (randomnumb.innerHTML == "You rolled a 2"){
+				img.src = "images/die-2.jpg";
+			} else if (randomnumb.innerHTML == "You rolled a 3"){
+				img.src = "images/die-3.jpg";
+			} else if (randomnumb.innerHTML == "You rolled a 4"){
+				img.src = "images/die-4.PNG";
+			} else if (randomnumb.innerHTML == "You rolled a 5"){
+				img.src = "images/die-5.PNG";
+			} else if (randomnumb.innerHTML == "You rolled a 6"){
+				img.src = "images/die-6.png";
+			} else {}
 		}, 1500);
 	} else if (element2.classList.contains("opaque")){
 		setTimeout(function (){
-		var roll = Math.floor(Math.random()*10) +1;
-		document.getElementById("random-numb").innerHTML = "You rolled a " + roll;
-		if (randomnumb.innerHTML == "You rolled a 1"){
-			img.src = "images/die-1.jpg";
-		} else if (randomnumb.innerHTML == "You rolled a 2"){
-			img.src = "images/die-2.jpg";
-		} else if (randomnumb.innerHTML == "You rolled a 3"){
-			img.src = "images/die-3.jpg";
-		} else if (randomnumb.innerHTML == "You rolled a 4"){
-			img.src = "images/die-4.PNG";
-		} else if (randomnumb.innerHTML == "You rolled a 5"){
-			img.src = "images/die-5.PNG";
-		} else if (randomnumb.innerHTML == "You rolled a 6"){
-			img.src = "images/die-6.png";
-		} else if (randomnumb.innerHTML == "You rolled a 7"){
-			img.src = "images/die-7.jpg";
-		} else if (randomnumb.innerHTML == "You rolled a 8"){
-			img.src = "images/die-8.jpg";
-		} else if (randomnumb.innerHTML == "You rolled a 9"){
-			img.src = "images/die-9.jpg";
-		} else if (randomnumb.innerHTML == "You rolled a 10"){
-			img.src = "images/die-10.jpg";
-		} else {}
+			var roll = Math.floor(Math.random()*10) +1;
+			document.getElementById("random-numb").innerHTML = "You rolled a " + roll;
+			if (randomnumb.innerHTML == "You rolled a 1"){
+				img.src = "images/die-1.jpg";
+			} else if (randomnumb.innerHTML == "You rolled a 2"){
+				img.src = "images/die-2.jpg";
+			} else if (randomnumb.innerHTML == "You rolled a 3"){
+				img.src = "images/die-3.jpg";
+			} else if (randomnumb.innerHTML == "You rolled a 4"){
+				img.src = "images/die-4.PNG";
+			} else if (randomnumb.innerHTML == "You rolled a 5"){
+				img.src = "images/die-5.PNG";
+			} else if (randomnumb.innerHTML == "You rolled a 6"){
+				img.src = "images/die-6.png";
+			} else if (randomnumb.innerHTML == "You rolled a 7"){
+				img.src = "images/die-7.jpg";
+			} else if (randomnumb.innerHTML == "You rolled a 8"){
+				img.src = "images/die-8.jpg";
+			} else if (randomnumb.innerHTML == "You rolled a 9"){
+				img.src = "images/die-9.jpg";
+			} else if (randomnumb.innerHTML == "You rolled a 10"){
+				img.src = "images/die-10.jpg";
+			} else {}
 		}, 1500);
-	} else if (element1.classList.contains("opaque") && element3.classList.contains("opaque")){
-		setTimeout(function (){
-		randomnumb.innerHTML = "You rolled a 1";
-		img.src = "images/die-1.jpg";}, 1500);
 	} else {
 		setTimeout(function (){
-		var roll = Math.floor(Math.random()*6) +1;
-		document.getElementById("random-numb").innerHTML = "You rolled a " + roll;
-		if (randomnumb.innerHTML == "You rolled a 1"){
-			img.src = "images/die-1.jpg";
-		} else if (randomnumb.innerHTML == "You rolled a 2"){
-			img.src = "images/die-2.jpg";
-		} else if (randomnumb.innerHTML == "You rolled a 3"){
-			img.src = "images/die-3.jpg";
-		} else if (randomnumb.innerHTML == "You rolled a 4"){
-			img.src = "images/die-4.PNG";
-		} else if (randomnumb.innerHTML == "You rolled a 5"){
-			img.src = "images/die-5.PNG";
-		} else if (randomnumb.innerHTML == "You rolled a 6"){
-			img.src = "images/die-6.png";
-		} else {}
+			var roll = Math.floor(Math.random()*6) +1;
+			document.getElementById("random-numb").innerHTML = "You rolled a " + roll;
+			if (randomnumb.innerHTML == "You rolled a 1"){
+				img.src = "images/die-1.jpg";
+			} else if (randomnumb.innerHTML == "You rolled a 2"){
+				img.src = "images/die-2.jpg";
+			} else if (randomnumb.innerHTML == "You rolled a 3"){
+				img.src = "images/die-3.jpg";
+			} else if (randomnumb.innerHTML == "You rolled a 4"){
+				img.src = "images/die-4.PNG";
+			} else if (randomnumb.innerHTML == "You rolled a 5"){
+				img.src = "images/die-5.PNG";
+			} else if (randomnumb.innerHTML == "You rolled a 6"){
+				img.src = "images/die-6.png";
+			} else {}
 		}, 1500);
 	}
 }
