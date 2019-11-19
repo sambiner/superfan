@@ -21,6 +21,8 @@ var randomnumb = document.getElementById("random-numb");
 var img = document.getElementById("img");
 var placealigner = document.getElementById("placealigner");
 var smallaligner = document.getElementById("smallaligner");
+var smallaligner1 = document.getElementById("smallaligner1");
+var spacer = document.getElementById("spacer");
 var troll = document.getElementById("troll");
 var place1 = document.getElementById("place1");
 var place2 = document.getElementById("place2");
@@ -59,6 +61,7 @@ x.addListener(myFunction);
 function optionsToggle(elem){
 	rcolumn.classList.toggle("display");
 	column1.classList.toggle("full-width");
+	spacer.classList.toggle("display");
 }
 function diceSizeToggle(elem){
 	sixsided.classList.toggle("display");
