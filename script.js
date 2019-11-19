@@ -20,6 +20,7 @@ var tensided = document.getElementById("10-sided");
 var randomnumb = document.getElementById("random-numb");
 var img = document.getElementById("img");
 var placealigner = document.getElementById("placealigner");
+var smallaligner = document.getElementById("smallaligner");
 var troll = document.getElementById("troll");
 var place1 = document.getElementById("place1");
 var place2 = document.getElementById("place2");
@@ -88,6 +89,7 @@ function trollMode(elem){
 		four.classList.toggle("display");
 		five.classList.toggle("display");
 		six.classList.toggle("display");
+		placealigner.classList.toggle("display");
 	} else if(element2.classList.contains("opaque")){
 		one.classList.toggle("display");
 		two.classList.toggle("display");
@@ -99,6 +101,7 @@ function trollMode(elem){
 		eight.classList.toggle("display");
 		nine.classList.toggle("display");
 		ten.classList.toggle("display");
+		smallaligner.classList.toggle("display");
 	} else {
 		
 	}
@@ -180,6 +183,11 @@ function diceRoll(elem){
 		setTimeout(function(){
 			randomnumb.innerHTML = "You rolled a 9";
 			img.src = "images/die-9.jpg";
+		}, 1500);
+	} else if (element2.classList.contains("opaque") && element12.classList.contains("opaque")){
+		setTimeout(function(){
+			randomnumb.innerHTML = "You rolled a 10";
+			img.src = "images/die-10.jpg";
 		}, 1500);
 	} else if(element1.classList.contains("opaque")){
 		setTimeout(function (){
