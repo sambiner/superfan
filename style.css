@@ -5,7 +5,7 @@ body{
 	display: flex;
 	background-color: black;
 	overflow: hidden;
-	cursor: url(dice.cur),auto;
+	cursor: url(images/dice.cur),auto;
 }
 h1{
 	font-size: 2vw;
@@ -54,7 +54,7 @@ p{
 .dice-sizes{
 	height: 100%;
 	width: 30%;
-	display: flex;
+	
 }
 .d{
 	height: calc((1.5/13)*100%);
@@ -188,7 +188,10 @@ p{
 		display: block;
 	}
 	h3{
-		font-size: 0.9vw;
+		font-size: 1.15vw;
+	}
+	p{
+		font-size: 1.2vw;
 	}
 	.column{
 		height: 50%;
@@ -219,14 +222,11 @@ p{
 		display: block;
 	}
 	.lower-bar{
-		height: 3.5vh;
+		height: 4vh;
 		width: 25%;
 	}
 	.media{
 		display: block;
-	}
-	p{
-		font-size: 1.5vh;
 	}
 	.placeholder{
 		display: none;

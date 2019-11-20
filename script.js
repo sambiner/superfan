@@ -72,7 +72,7 @@ function diceSizeToggle(elem){
 	spacer4.classList.toggle("display");
 	spacer5.classList.toggle("display");
 	spacer6.classList.toggle("display");
-	troll.classList.toggle("display");
+	troll.classList.add("display");
 	one.classList.add("display");
 	two.classList.add("display");
 	three.classList.add("display");
@@ -86,25 +86,24 @@ function diceSizeToggle(elem){
 }
 function trollMode(elem){
 	if(element1.classList.contains("opaque")){
-		one.classList.toggle("display");
-		two.classList.toggle("display");
-		three.classList.toggle("display");
-		four.classList.toggle("display");
-		five.classList.toggle("display");
-		six.classList.toggle("display");
-		placealigner.classList.toggle("display");
+		one.classList.remove("display");
+		two.classList.remove("display");
+		three.classList.remove("display");
+		four.classList.remove("display");
+		five.classList.remove("display");
+		six.classList.remove("display");
+		placealigner.classList.remove("display");
+		seven.classList.add("display");
+		eight.classList.add("display");
+		nine.classList.add("display");
+		ten.classList.add("display");
 	} else if(element2.classList.contains("opaque")){
-		one.classList.toggle("display");
-		two.classList.toggle("display");
-		three.classList.toggle("display");
-		four.classList.toggle("display");
-		five.classList.toggle("display");
-		six.classList.toggle("display");
-		seven.classList.toggle("display");
-		eight.classList.toggle("display");
-		nine.classList.toggle("display");
-		ten.classList.toggle("display");
-		smallaligner.classList.toggle("display");
+		seven.classList.remove("display");
+		eight.classList.remove("display");
+		nine.classList.remove("display");
+		ten.classList.remove("display");
+		smallaligner.classList.remove("display");
+		placealigner.classList.add("display");
 	} else {
 		
 	}
@@ -263,10 +262,12 @@ function reset(elem){
 function opaqueSix(elem){
 	sixsided.classList.add("opaque");
 	tensided.classList.remove("opaque");
+	troll.classList.remove("display");
 }
 function opaqueTen(elem){
 	tensided.classList.add("opaque");
 	sixsided.classList.remove("opaque");
+	troll.classList.remove("display");
 }
 function clickOne(elem){
 	if (element1.classList.contains("opaque")){
