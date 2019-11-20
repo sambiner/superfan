@@ -23,6 +23,7 @@ var placealigner = document.getElementById("placealigner");
 var smallaligner = document.getElementById("smallaligner");
 var smallaligner1 = document.getElementById("smallaligner1");
 var spacer = document.getElementById("spacer");
+var scream = document.getElementById("scream")
 var troll = document.getElementById("troll");
 var place1 = document.getElementById("place1");
 var place2 = document.getElementById("place2");
@@ -53,6 +54,7 @@ const element12 = document.getElementById("10");
 function myFunction(x){
 	if(x.matches){
 		alert("You have ANGERED Jonathan!");
+		scream.play();
 	} else {
 	}
 }

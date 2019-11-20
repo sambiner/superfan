@@ -175,6 +175,9 @@ p{
 .overflow{
 	overflow: hidden;
 }
+.cursor{
+	cursor: pointer;
+}
 .bigger-place-aligner{
 	width: 65%;
 	height: 100%;
