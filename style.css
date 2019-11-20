@@ -54,7 +54,6 @@ p{
 .dice-sizes{
 	height: 100%;
 	width: 30%;
-	
 }
 .d{
 	height: calc((1.5/13)*100%);
@@ -82,9 +81,6 @@ p{
 	height: 8%;
 	width: 100%;
 	display: flex;
-}
-.cursor{
-	cursor: pointer;
 }
 .number-display{
 	height: calc((2/15)*100%);
@@ -222,7 +218,7 @@ p{
 		display: block;
 	}
 	.lower-bar{
-		height: 4vh;
+		height: 4.6vh;
 		width: 25%;
 	}
 	.media{
