@@ -100,6 +100,12 @@ function trollMode(elem){
 		nine.classList.add("display");
 		ten.classList.add("display");
 	} else if(element2.classList.contains("opaque")){
+		one.classList.remove("display");
+		two.classList.remove("display");
+		three.classList.remove("display");
+		four.classList.remove("display");
+		five.classList.remove("display");
+		six.classList.remove("display");
 		seven.classList.remove("display");
 		eight.classList.remove("display");
 		nine.classList.remove("display");
