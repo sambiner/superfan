@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="style.css"/>
 	</head>
 	<body>
-		<div class="column full-width" id="column1">
+		<div class="column full-width" id="column1"> <!--The first of two columns.  The other is hidden until the "options" button is clicked-->
 			<div class="upper-rectangle">
 				<div class="img center1">
 					<img class="constrain" id="img" src="images/dice-stationary.PNG"/>
@@ -43,8 +43,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="column display" id="rcolumn">
-			<div class="upper-rectangle1">
+		<div class="column display" id="rcolumn"> <!--The second of two columns-->
+			<div class="upper-rectangle">
 				<div class="upper">
 					<div class="place-aligner1"></div>
 					<div class="title center1" id="options-tab">
@@ -60,16 +60,16 @@
 					<div class="d">
 						<div class="bigger-place-aligner"></div>
 						<div class="place-aligner"></div>
-						<button class="dice-sizes cursor display center1" id="6-sided" onClick="opaqueSix(this)">
+						<button class="dice-sizes cursor display center1 opaque" id="6-sided" onClick="opaqueSix(this)">
 							<p>6-sided</p>
 						</button>
 					</div>
 					<div class="place-spacer display" id="spacer3"></div>
 					<div class="place-spacer display" id="spacer4"></div>
-					<div class="d display" id="10-sided">
+					<div class="d">
 						<div class="bigger-place-aligner"></div>
 						<div class="place-aligner"></div>
-						<button class="dice-sizes cursor center1" onClick="opaqueTen(this)">
+						<button class="dice-sizes display cursor center1 opaque" id="10-sided" onClick="opaqueTen(this)">
 							<p>10-sided</p>
 						</button>
 					</div>
@@ -82,14 +82,14 @@
 					</div>
 				</div>
 			</div>
-			<div class="lower-rectangle1">
-				<div class="place-aligner1 display" id="placealigner"></div>
+			<div class="lower-rectangle1"> <!--Where the numbers for Troll Mode are located-->
+				<div class="place-aligner1 display" id="placealigner"></div> <!--These are to move the buttons into position-->
 				<div class="place-aligner2 display" id="smallaligner"></div>
 				<div class="place-aligner2 display" id="smallaligner1"></div>
 				<button class="troll1 center1 cursor display overflow" id="1" onClick="clickOne(this)">
 					<p>1</p>
 				</button>
-				<div class="place-aligner2"></div>
+				<div class="place-aligner2"></div> <!--This aligns the buttons so they are not squished together-->
 				<button class="troll1 center1 cursor display overflow" id="2" onClick="clickTwo(this)">
 					<p>2</p>
 				</button>
@@ -127,7 +127,7 @@
 				</div>
 			</div>
 		</div>
-		<audio src="images/jon_screaming.mp3" type="audio/mp3" id="scream" loop></audio>
+		<audio src="images/jon_screaming.mp3" type="audio/mp3" id="scream" loop></audio> <!--Audio for the earrape noise when the viewport is 500px-->
 		<script src="script.js"></script>
 	</body>
 </html>
